@@ -93,11 +93,47 @@ ga('send', 'pageview');
                                     <a class="main-nav-list-link" href="/about/index.html">About</a>
                                 </li>
                             
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/github/index.html">index.github</a>
+                                </li>
+                            
                         </ul>
                         <nav id="sub-nav">
                             <div id="search-form-wrap">
 
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://hyuk.github.io"></form>
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
 
 </div>
                         </nav>
@@ -168,7 +204,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://hyuk.github.io/2019/08/10/hello-world/" data-id="cjz5a5b120000c8exmjd87ith" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://hyuk.github.io/2019/08/10/hello-world/" data-id="cjz5aeulg0000woex94r15ur1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
