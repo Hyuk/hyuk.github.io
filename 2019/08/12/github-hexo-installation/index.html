@@ -12,19 +12,19 @@
     
         <meta name="keywords" content="Hexo,Github,Blog,Install,Setup">
     
-    <meta name="description" content="How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github. Keep the node and npm version up to da">
+    <meta name="description" content="How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github. Keep the node and npm version up to d">
 <meta name="keywords" content="Hexo,Github,Blog,Install,Setup">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to install Hexo on Github and write a first blog post">
 <meta property="og:url" content="http://hyuk.github.io/2019/08/12/github-hexo-installation/index.html">
 <meta property="og:site_name" content="Hyuk&#39;s Blog">
-<meta property="og:description" content="How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github. Keep the node and npm version up to da">
+<meta property="og:description" content="How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github. Keep the node and npm version up to d">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://hyuk.github.io/2019/08/12/images/hexo-logo.png">
-<meta property="og:updated_time" content="2019-08-12T01:11:07.248Z">
+<meta property="og:updated_time" content="2019-08-12T01:32:13.891Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to install Hexo on Github and write a first blog post">
-<meta name="twitter:description" content="How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github. Keep the node and npm version up to da">
+<meta name="twitter:description" content="How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github. Keep the node and npm version up to d">
 <meta name="twitter:image" content="http://hyuk.github.io/2019/08/12/images/hexo-logo.png">
     
 
@@ -189,7 +189,7 @@ ga('send', 'pageview');
                 
     <div class="article-date">
         <a href="/2019/08/12/github-hexo-installation/" class="article-date">
-            <time datetime="2019-08-12T01:11:07.000Z" itemprop="datePublished">2019-08-12</time>
+            <time datetime="2019-08-12T01:32:07.000Z" itemprop="datePublished">2019-08-12</time>
         </a>
     </div>
 
@@ -205,7 +205,8 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="How-to-install-Hexo-on-Github"><a href="#How-to-install-Hexo-on-Github" class="headerlink" title="How to install Hexo on Github"></a>How to install Hexo on Github</h1><p>Hexo is a static website generator. You can use Hexo as a Github blog.<br>In this post, I’ll let you know how to install Hexo on Github.</p>
+            <p><img src="hexo-logo.png" alt></p>
+<h1 id="How-to-install-Hexo-on-Github"><a href="#How-to-install-Hexo-on-Github" class="headerlink" title="How to install Hexo on Github"></a>How to install Hexo on Github</h1><p>Hexo is a static website generator. You can use Hexo as a Github blog.<br>In this post, I’ll let you know how to install Hexo on Github.</p>
 <h2 id="Keep-the-node-and-npm-version-up-to-date-before-installing-Hexo"><a href="#Keep-the-node-and-npm-version-up-to-date-before-installing-Hexo" class="headerlink" title="Keep the node and npm version up to date before installing Hexo."></a>Keep the node and npm version up to date before installing Hexo.</h2><ul>
 <li><p>Check node version</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
@@ -249,6 +250,12 @@ ga('send', 'pageview');
 <li><p>Create a draft</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft [title]</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>Create a Thumbnail Image</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">width * height = 345x164</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Set thumbnail on blog post<br>create images folder inside source folder then set the path as blow</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thumbnail: ../images/hexo-logo.png</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>Preview draft</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure>
 </li>
@@ -257,10 +264,15 @@ ga('send', 'pageview');
 </li>
 <li><p>Preview publish</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
 </li>
-<li><p>Create a Thumbnail Image</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">width * height = 345x164</span><br></pre></td></tr></table></figure></li>
 </ul>
+<h2 id="Publish-Blog-Post"><a href="#Publish-Blog-Post" class="headerlink" title="Publish Blog Post"></a>Publish Blog Post</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [title]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Create-static-files-before-deploy"><a href="#Create-static-files-before-deploy" class="headerlink" title="Create static files before deploy"></a>Create static files before deploy</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h2 id="Deploy-the-static-files-on-Github"><a href="#Deploy-the-static-files-on-Github" class="headerlink" title="Deploy the static files on Github"></a>Deploy the static files on Github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
 
         </div>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -290,7 +302,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://hyuk.github.io/2019/08/12/github-hexo-installation/" data-id="cjz7pnk710000o8exhafe6vqn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://hyuk.github.io/2019/08/12/github-hexo-installation/" data-id="cjz7q2osd0002kgexu2ujd348" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -368,9 +380,10 @@ ga('send', 'pageview');
         "dateCreated": "2019-08-12",
         "dateModified": "2019-08-12",
         "url": "http://hyuk.github.io/2019/08/12/github-hexo-installation/",
-        "description": "How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github.
-Keep the node and npm version up to da"
-        "wordCount": 307
+        "description": "
+How to install Hexo on GithubHexo is a static website generator. You can use Hexo as a Github blog.In this post, I’ll let you know how to install Hexo on Github.
+Keep the node and npm version up to d"
+        "wordCount": 390
     }
 </script>
 
@@ -472,7 +485,7 @@ Keep the node and npm version up to da"
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Github/">Github</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Github/Blog/">Blog</a></p>
                             <p class="item-title"><a href="/2019/08/12/github-hexo-installation/" class="title">How to install Hexo on Github and write a first blog post</a></p>
-                            <p class="item-date"><time datetime="2019-08-12T01:11:07.000Z" itemprop="datePublished">2019-08-12</time></p>
+                            <p class="item-date"><time datetime="2019-08-12T01:32:07.000Z" itemprop="datePublished">2019-08-12</time></p>
                         </div>
                     </li>
                 
