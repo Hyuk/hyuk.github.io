@@ -6,21 +6,26 @@
     
 
     
-    <title>Tag: React Native | Hyuk&#39;s Blog</title>
+    <title>How to set up splash screen in flutter | Hyuk&#39;s Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="All About Programming">
-<meta name="keywords" content="Programming, Flutter, Android, Java, Python, PHP, MySQL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hyuk&#39;s Blog">
-<meta property="og:url" content="http://hyuk.github.io/tags/React-Native/index.html">
+        <meta name="keywords" content="Flutter,UI/UX">
+    
+    <meta name="description" content="There are two ways to setup splash screen in flutter. First, we need to update the launch_background.xml file location below:android/app/src/main/drawable/launch_background.xml 123456789101112&amp;lt;?xm">
+<meta name="keywords" content="Flutter,UI&#x2F;UX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to set up splash screen in flutter">
+<meta property="og:url" content="http://hyuk.github.io/2019/09/04/how-to-set-up-splash-screen-in-flutter/index.html">
 <meta property="og:site_name" content="Hyuk&#39;s Blog">
-<meta property="og:description" content="All About Programming">
+<meta property="og:description" content="There are two ways to setup splash screen in flutter. First, we need to update the launch_background.xml file location below:android/app/src/main/drawable/launch_background.xml 123456789101112&amp;lt;?xm">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://hyuk.github.io/images/flutter.png">
+<meta property="og:updated_time" content="2019-09-04T04:21:07.716Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hyuk&#39;s Blog">
-<meta name="twitter:description" content="All About Programming">
+<meta name="twitter:title" content="How to set up splash screen in flutter">
+<meta name="twitter:description" content="There are two ways to setup splash screen in flutter. First, we need to update the launch_background.xml file location below:android/app/src/main/drawable/launch_background.xml 123456789101112&amp;lt;?xm">
+<meta name="twitter:image" content="https://hyuk.github.io/images/flutter.png">
     
 
     
@@ -146,7 +151,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Tag: <em>React Native</em>
+    <a class="page-title-link" href="/categories/Flutter/">Flutter</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Flutter/UI-UX/">UI/UX</a>
     </h1>
 </div>
 
@@ -162,69 +167,173 @@ ga('send', 'pageview');
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-                            
-
-    
-    
+                            <article id="post-how-to-set-up-splash-screen-in-flutter" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/09/02/react-native-vs-flutter/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://hyuk.github.io/images/flutter.png)" alt="React Native vs Flutter" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://hyuk.github.io/2019/09/02/react-native-vs-flutter/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Flutter/">Flutter</a>
-            </div>
-            <div class="date"><time datetime="2019-09-02T07:14:37.000Z" itemprop="datePublished">2019-09-02</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/09/02/react-native-vs-flutter/">React Native vs Flutter</a>
+        How to set up splash screen in flutter
         </h1>
     
 
-        <p class="article-excerpt">
-            
-React Native vs FlutterCouple of years ago, mobile development plaform is evoluted. Beyond the native, Object-C for iOS and Java/Kotlin for Android, now we can build iOS and Android app using the sam
-        </p>
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/09/04/how-to-set-up-splash-screen-in-flutter/" class="article-date">
+            <time datetime="2019-09-04T04:21:07.000Z" itemprop="datePublished">2019-09-04</time>
+        </a>
     </div>
-</article>
-    
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Flutter/">Flutter</a>, <a class="tag-link" href="/tags/UI-UX/">UI/UX</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="https://hyuk.github.io/images/flutter.png" alt></p>
+<p>There are two ways to setup splash screen in flutter.</p>
+<p>First, we need to update the launch_background.xml file location below:<br><code>android/app/src/main/drawable/launch_background.xml</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Modify this file to customize your launch splash screen --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@android:color/white"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- You can insert your own image assets here --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- &lt;item&gt;</span></span><br><span class="line"><span class="comment">        &lt;bitmap</span></span><br><span class="line"><span class="comment">            android:gravity="center"</span></span><br><span class="line"><span class="comment">            android:src="@mipmap/launch_image" /&gt;</span></span><br><span class="line"><span class="comment">    &lt;/item&gt; --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>If you want to change the splash screens’ background color, then you need to update the code as below:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Modify this file to customize your launch splash screen --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@android:color/black"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- You can insert your own image assets here --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- &lt;item&gt;</span></span><br><span class="line"><span class="comment">        &lt;bitmap</span></span><br><span class="line"><span class="comment">            android:gravity="center"</span></span><br><span class="line"><span class="comment">            android:src="@mipmap/launch_image" /&gt;</span></span><br><span class="line"><span class="comment">    &lt;/item&gt; --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>If you want to add an image at the center of the splash screen, then you need to un-comment the code and place an image insde of drawable folder and change the <code>android:src</code> as below:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Modify this file to customize your launch splash screen --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@android:color/black"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- You can insert your own image assets here --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bitmap</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:src</span>=<span class="string">"@drawable/splashimage"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Please note that do not write the image’s extension. Recommend to use png format of the image. </p>
+<p>It is the first method to set up the splash screen in flutter.</p>
+<p>The second method is to create a page for a splash screen and automatically goes to the main page when the time is up.</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'dart:async'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">'Flutter Demo'</span>,</span><br><span class="line">      theme: ThemeData(</span><br><span class="line">        primarySwatch: Colors.blue,</span><br><span class="line">      ),</span><br><span class="line">      home: SplashScreen(),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SplashScreen</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _SplashScreenState createState() =&gt; _SplashScreenState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_SplashScreenState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">SplashScreen</span>&gt; </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement initState</span></span><br><span class="line">    Timer(<span class="built_in">Duration</span>(seconds: <span class="number">3</span>), () &#123;</span><br><span class="line">      Navigator.push(</span><br><span class="line">        context,</span><br><span class="line">        MaterialPageRoute(</span><br><span class="line">          builder: (context) =&gt; MyHomePage(title: <span class="string">'Splash Screen Test'</span>),</span><br><span class="line">        ),</span><br><span class="line">      );</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      body: Container(</span><br><span class="line">        color: Colors.black,</span><br><span class="line">        child: Center(</span><br><span class="line">          child: CircleAvatar(</span><br><span class="line">            backgroundColor: Colors.amberAccent,</span><br><span class="line">            foregroundColor: Colors.red,</span><br><span class="line">            child: Icon(</span><br><span class="line">              Icons.adb,</span><br><span class="line">              size: <span class="number">50.0</span>,</span><br><span class="line">            ),</span><br><span class="line">          ),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyHomePage</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  MyHomePage(&#123;Key key, <span class="keyword">this</span>.title&#125;) : <span class="keyword">super</span>(key: key);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">final</span> <span class="built_in">String</span> title;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _MyHomePageState createState() =&gt; _MyHomePageState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_MyHomePageState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">MyHomePage</span>&gt; </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        appBar: AppBar(</span><br><span class="line">          title: Text(widget.title),</span><br><span class="line">        ),</span><br><span class="line">        body: Center(</span><br><span class="line">          child: Column(</span><br><span class="line">            mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">            children: &lt;Widget&gt;[</span><br><span class="line">              Text(</span><br><span class="line">                <span class="string">'Hello World'</span>,</span><br><span class="line">              ),</span><br><span class="line">            ],</span><br><span class="line">          ),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>This is what I’ve done.</p>
+<p><img src="ezgif-1-19f47ab92128.gif" alt></p>
+
         </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- hyuk-github-post-wide -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8202026463041478"
+     data-ad-slot="6223169015"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://hyuk.github.io/2019/09/04/how-to-set-up-splash-screen-in-flutter/" data-id="ck04r843p0005ssexxfljgo2j" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Hyukho Song"
+        },
+        "headline": "How to set up splash screen in flutter",
+        "image": "http://hyuk.github.iohttps://hyuk.github.io/images/flutter.png",
+        "keywords": "Flutter UI/UX",
+        "genre": "Flutter UI/UX",
+        "datePublished": "2019-09-04",
+        "dateCreated": "2019-09-04",
+        "dateModified": "2019-09-04",
+        "url": "http://hyuk.github.io/2019/09/04/how-to-set-up-splash-screen-in-flutter/",
+        "description": "
+There are two ways to setup splash screen in flutter.
+First, we need to update the launch_background.xml file location below:android/app/src/main/drawable/launch_background.xml
+123456789101112&lt;?xm"
+        "wordCount": 1256
+    }
+</script>
+
+</article>
+
+    <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
-
-    </div></section>
+    
+    </section>
 
 
 
@@ -281,6 +390,19 @@ React Native vs FlutterCouple of years ago, mobile development plaform is evolut
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/09/03/flutter-textfield-cursor-misplaced-issue/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Flutter Textfield Cursor Misplaced Issue</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -500,11 +622,13 @@ React Native vs FlutterCouple of years ago, mobile development plaform is evolut
     var disqus_shortname = 'hyuks-github-blog';
     
     
+    var disqus_url = 'http://hyuk.github.io/2019/09/04/how-to-set-up-splash-screen-in-flutter/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
