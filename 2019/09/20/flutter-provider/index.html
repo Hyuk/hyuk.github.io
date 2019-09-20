@@ -6,25 +6,25 @@
     
 
     
-    <title>How to use Flutter Shared Preferences Plugin | Hyuk&#39;s Blog</title>
+    <title>How to use Flutter Provider package | Hyuk&#39;s Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="Flutter,Plugin,How To">
+        <meta name="keywords" content="Flutter,Provider,State Management">
     
-    <meta name="description" content="I’ll let you know how to use Flutter Shared Preferences Plugin.  Install Shared_Preferences Plugin from Flutter Packages Website. 12dependencies:  shared_preferences: ^0.5.3+4  Import the Shared Pref">
-<meta name="keywords" content="Flutter,Plugin,How To">
+    <meta name="description" content="How to use Flutter Provider packageThere are a couple of state management method in flutter such as Bloc and Provider. I’ll let you know how to use Provider packages in this blog post. In order to us">
+<meta name="keywords" content="Flutter,Provider,State Management">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to use Flutter Shared Preferences Plugin">
-<meta property="og:url" content="http://hyuk.github.io/2019/08/28/how-to-use-flutter-shared-preferences-plugin/index.html">
+<meta property="og:title" content="How to use Flutter Provider package">
+<meta property="og:url" content="http://hyuk.github.io/2019/09/20/flutter-provider/index.html">
 <meta property="og:site_name" content="Hyuk&#39;s Blog">
-<meta property="og:description" content="I’ll let you know how to use Flutter Shared Preferences Plugin.  Install Shared_Preferences Plugin from Flutter Packages Website. 12dependencies:  shared_preferences: ^0.5.3+4  Import the Shared Pref">
+<meta property="og:description" content="How to use Flutter Provider packageThere are a couple of state management method in flutter such as Bloc and Provider. I’ll let you know how to use Provider packages in this blog post. In order to us">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://hyuk.github.io/images/flutter.png">
-<meta property="og:updated_time" content="2019-09-02T07:31:26.517Z">
+<meta property="og:updated_time" content="2019-09-20T06:13:53.362Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to use Flutter Shared Preferences Plugin">
-<meta name="twitter:description" content="I’ll let you know how to use Flutter Shared Preferences Plugin.  Install Shared_Preferences Plugin from Flutter Packages Website. 12dependencies:  shared_preferences: ^0.5.3+4  Import the Shared Pref">
+<meta name="twitter:title" content="How to use Flutter Provider package">
+<meta name="twitter:description" content="How to use Flutter Provider packageThere are a couple of state management method in flutter such as Bloc and Provider. I’ll let you know how to use Provider packages in this blog post. In order to us">
 <meta name="twitter:image" content="https://hyuk.github.io/images/flutter.png">
     
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Flutter/">Flutter</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Flutter/Plugin/">Plugin</a>
+    <a class="page-title-link" href="/categories/Flutter/">Flutter</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Flutter/packages/">packages</a>
     </h1>
 </div>
 
@@ -167,14 +167,14 @@ ga('send', 'pageview');
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-                            <article id="post-how-to-use-flutter-shared-preferences-plugin" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-flutter-provider" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        How to use Flutter Shared Preferences Plugin
+        How to use Flutter Provider package
         </h1>
     
 
@@ -184,8 +184,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2019/08/28/how-to-use-flutter-shared-preferences-plugin/" class="article-date">
-            <time datetime="2019-08-28T07:02:38.000Z" itemprop="datePublished">2019-08-28</time>
+        <a href="/2019/09/20/flutter-provider/" class="article-date">
+            <time datetime="2019-09-20T06:13:53.000Z" itemprop="datePublished">2019-09-20</time>
         </a>
     </div>
 
@@ -194,7 +194,7 @@ ga('send', 'pageview');
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Flutter/">Flutter</a>, <a class="tag-link" href="/tags/How-To/">How To</a>, <a class="tag-link" href="/tags/Plugin/">Plugin</a>
+        <a class="tag-link" href="/tags/Flutter/">Flutter</a>, <a class="tag-link" href="/tags/Provider/">Provider</a>, <a class="tag-link" href="/tags/State-Management/">State Management</a>
     </div>
 
             </div>
@@ -202,38 +202,67 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="https://hyuk.github.io/images/flutter.png" alt></p>
-<p>I’ll let you know how to use Flutter Shared Preferences Plugin.</p>
+<h1 id="How-to-use-Flutter-Provider-package"><a href="#How-to-use-Flutter-Provider-package" class="headerlink" title="How to use Flutter Provider package"></a>How to use Flutter Provider package</h1><p>There are a couple of state management method in flutter such as Bloc and Provider. I’ll let you know how to use Provider packages in this blog post.</p>
+<p>In order to use Provider packages, you need to install Provider packages.</p>
 <ol>
-<li><p>Install Shared_Preferences Plugin from <a href="https://pub.dev/packages/shared_preferences" target="_blank" rel="noopener">Flutter Packages Website</a>.</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line"><span class="attr">  shared_preferences:</span> <span class="string">^0.5.3+4</span></span><br></pre></td></tr></table></figure>
+<li><p>Add provider packages on pubspec.yaml file.</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line"><span class="attr">  provider:</span> <span class="string">^3.1.0</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>Import the Shared Preferences Plugin</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:shared_preferences/shared_preferences.dart'</span>;</span><br></pre></td></tr></table></figure>
+<li><p>Type following command on your Terminal</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ flutter pub get</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>We are going to use <code>TextField</code> widget and <code>Switch</code> widget. So, we need to declare the variables for those widgets.<br><code>TextField</code> widget needs <code>TextEditingController</code>, and <code>Switch</code> widget needs <code>bool</code> variables. Declare those variables in State class.</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TextEditingController _controller = TextEditingController(text: <span class="string">"LOVE"</span>);</span><br><span class="line"><span class="built_in">bool</span> isON = <span class="keyword">false</span>;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>we need to use the variables in the widget</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">ListView(</span><br><span class="line">    children: &lt;Widget&gt;[</span><br><span class="line">        ListTile(</span><br><span class="line">            title: TextField(</span><br><span class="line">                controller: _controller,</span><br><span class="line">            ),</span><br><span class="line">        ),</span><br><span class="line">        Container(</span><br><span class="line">            child: Switch(</span><br><span class="line">                value: isON,</span><br><span class="line">                onChanged: (newValue) &#123;</span><br><span class="line">                    setState(()&#123;</span><br><span class="line">                        isON = newValue;</span><br><span class="line">                    &#125;);</span><br><span class="line">                &#125;,</span><br><span class="line">            ),</span><br><span class="line">        ),</span><br><span class="line">    ],</span><br><span class="line">),</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>We need setter and getter method.</p>
+<li><p>Include the packages on your project.</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:provider/provider.dart'</span>;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
+<p>Our project tree</p>
 <ul>
-<li><p>Setter Method</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Future&lt;<span class="keyword">void</span>&gt; _setStringSharedPref() <span class="keyword">async</span> &#123;</span><br><span class="line">    SharedPreferences prefs = <span class="keyword">await</span> SharedPreferences.getInstance();</span><br><span class="line">    prefs.setString(<span class="string">"inputText"</span>, _controller.text);</span><br><span class="line">    prefs.setBool(<span class="string">"isON"</span>, isON);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>main.dart</li>
+<li>blocs<ul>
+<li>counter_bloc.dart</li>
+</ul>
 </li>
-<li><p>Getter Method</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Future&lt;<span class="built_in">String</span>&gt; _getStringFromSharedPref() <span class="keyword">async</span> &#123;</span><br><span class="line">    SharedPreferences prefs = <span class="keyword">await</span> SharedPreferences.getInstance();</span><br><span class="line">    <span class="keyword">return</span> prefs.getString(<span class="string">"inputText"</span>) ?? <span class="string">"LOVE"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Future&lt;<span class="built_in">bool</span>&gt; _getBoolFromSharedPref() <span class="keyword">async</span> &#123;</span><br><span class="line">    SharedPreferences prefs = <span class="keyword">await</span> SharedPreferences.getInstance();</span><br><span class="line">    <span class="keyword">return</span> prefs.getBool(<span class="string">"isON"</span>) ?? <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>pages<ul>
+<li>counter.dart</li>
+</ul>
+</li>
+<li>widgets<ul>
+<li>decrement.dart</li>
+<li>increment.dart</li>
+</ul>
 </li>
 </ul>
-<ol>
-<li><p>In order to save the data when the TextField and Switch is changed, add Setter Method to isChanged property.</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">TextField(</span><br><span class="line">    controller: _controller,</span><br><span class="line">    onChanged: (text) &#123;</span><br><span class="line">        _setStringSharedPref();</span><br><span class="line">    &#125;,</span><br><span class="line">),</span><br><span class="line"></span><br><span class="line">Switch(</span><br><span class="line">    value: isON,</span><br><span class="line">    onChanged: (newValue) &#123;</span><br><span class="line">        setState(() &#123;</span><br><span class="line">            isON = newValue;</span><br><span class="line">        &#125;);</span><br><span class="line">        _setStringSharedPref();</span><br><span class="line">    &#125;,</span><br><span class="line">),</span><br></pre></td></tr></table></figure>
+<ul>
+<li>main.dart<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:provider/provider.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'blocs/counter_bloc.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'pages/counter.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> MultiProvider( </span><br><span class="line">      providers: [</span><br><span class="line">        ChangeNotifierProvider&lt;CounterBloc&gt;(</span><br><span class="line">          builder: (context) =&gt; CounterBloc(),</span><br><span class="line">        ),</span><br><span class="line">      ],</span><br><span class="line">      child: MaterialApp(</span><br><span class="line">        home: CounterPage(),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 </li>
-<li><p>Add initState() and add Getter Method to get the Shared Prefereces values when launching the application.</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line"><span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line">    _getStringFromSharedPref().then((s) &#123;</span><br><span class="line">        _controller.text = s;</span><br><span class="line">    &#125;);</span><br><span class="line">    _getBoolFromSharedPref().then((b) &#123;</span><br><span class="line">        isON = b;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
+</ul>
+<p>Using MultiProvider when there are many variables<br>If there is only one, we don’t need <code>MultiProvider</code>, just use <code>ChangeNotifierProvider&lt;CounterBloc&gt;</code></p>
+<ul>
+<li>bloc/counter_bloc.dart<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CounterBloc</span> <span class="keyword">extends</span> <span class="title">ChangeNotifier</span> </span>&#123;</span><br><span class="line">  <span class="built_in">int</span> _counter = <span class="number">0</span>;</span><br><span class="line">  <span class="built_in">int</span> <span class="keyword">get</span> counter =&gt; _counter;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">set</span> counter(<span class="built_in">int</span> val) &#123;</span><br><span class="line">    _counter = val;</span><br><span class="line">    notifyListeners();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  increment() &#123;</span><br><span class="line">    _counter++;</span><br><span class="line">    notifyListeners();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  decrement() &#123;</span><br><span class="line">    _counter--;</span><br><span class="line">    notifyListeners();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Plase create provider class(CounterBloc) extend of <code>ChangeNotifier</code>.<br>we need four things, <code>variable</code>, <code>setter</code> and <code>getter</code>, and additionally functions<br>setter needs <code>notifyListerners()</code> and the other functions need <code>notifyListeners()</code> as well.<br>Just getter doesn’t need <code>notifyListeners();</code></p>
+<ul>
+<li>pages/counter.dart<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:provider/provider.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'../blocs/counter_bloc.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'../widgets/increment.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'../widgets/decrement.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CounterPage</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">final</span> CounterBloc counterBloc = Provider.of&lt;CounterBloc&gt;(context);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      body: Container(</span><br><span class="line">        child: Center(</span><br><span class="line">          child: Column(</span><br><span class="line">            mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">            children: &lt;Widget&gt;[</span><br><span class="line">              Text(</span><br><span class="line">                counterBloc.counter.toString(),</span><br><span class="line">                style: TextStyle(fontSize: <span class="number">62.0</span>),</span><br><span class="line">              ),</span><br><span class="line">              IncrementButton(),</span><br><span class="line">              DecrementButton(),</span><br><span class="line">            ],</span><br><span class="line">          ),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Add <code>final CounterBloc counterBloc = Provider.of&lt;CounterBloc&gt;(context);</code> after build statement<br>We will use counter with <code>Text</code> widget, so counter should be the string. to make the int to string, we use <code>.toString</code>.</p>
+<ul>
+<li>widgets/increment.dart<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:provider/provider.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'../blocs/counter_bloc.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">IncrementButton</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">final</span> CounterBloc counterBloc = Provider.of&lt;CounterBloc&gt;(context);</span><br><span class="line">    <span class="keyword">return</span> FlatButton.icon(</span><br><span class="line">      onPressed: () =&gt; counterBloc.increment(),</span><br><span class="line">      icon: Icon(Icons.add),</span><br><span class="line">      label: Text(<span class="string">'Add'</span>),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Add <code>final CounterBloc counterBloc = Provider.of&lt;CounterBloc&gt;(context);</code> after build statement.<br>Once the button pressed, the provider function will work.</p>
+<ul>
+<li>widgets/decrement.dart<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:provider/provider.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'../blocs/counter_bloc.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DecrementButton</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">final</span> CounterBloc counterBloc = Provider.of&lt;CounterBloc&gt;(context);</span><br><span class="line">    <span class="keyword">return</span> FlatButton.icon(</span><br><span class="line">      onPressed: () =&gt; counterBloc.decrement(),</span><br><span class="line">      icon: Icon(Icons.remove),</span><br><span class="line">      label: Text(<span class="string">'Remove'</span>),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Add <code>final CounterBloc counterBloc = Provider.of&lt;CounterBloc&gt;(context);</code> after build statement.<br>Once the button pressed, the provider function will work.</p>
 
         </div>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -252,7 +281,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://hyuk.github.io/2019/08/28/how-to-use-flutter-shared-preferences-plugin/" data-id="ck0rqau3o000l88exvcc5clvf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://hyuk.github.io/2019/09/20/flutter-provider/" data-id="ck0rqau30000488ex1tph22qp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -322,22 +351,18 @@ ga('send', 'pageview');
             "@type": "Person",
             "name": "Hyukho Song"
         },
-        "headline": "How to use Flutter Shared Preferences Plugin",
+        "headline": "How to use Flutter Provider package",
         "image": "http://hyuk.github.iohttps://hyuk.github.io/images/flutter.png",
-        "keywords": "Flutter Plugin How To",
-        "genre": "Flutter Plugin",
-        "datePublished": "2019-08-28",
-        "dateCreated": "2019-08-28",
-        "dateModified": "2019-09-02",
-        "url": "http://hyuk.github.io/2019/08/28/how-to-use-flutter-shared-preferences-plugin/",
+        "keywords": "Flutter Provider State Management",
+        "genre": "Flutter packages",
+        "datePublished": "2019-09-20",
+        "dateCreated": "2019-09-20",
+        "dateModified": "2019-09-20",
+        "url": "http://hyuk.github.io/2019/09/20/flutter-provider/",
         "description": "
-I’ll let you know how to use Flutter Shared Preferences Plugin.
-
-Install Shared_Preferences Plugin from Flutter Packages Website.
-12dependencies:  shared_preferences: ^0.5.3+4
-
-Import the Shared Pref"
-        "wordCount": 710
+How to use Flutter Provider packageThere are a couple of state management method in flutter such as Bloc and Provider. I’ll let you know how to use Provider packages in this blog post.
+In order to us"
+        "wordCount": 999
     }
 </script>
 
@@ -412,20 +437,10 @@ Import the Shared Pref"
         
 <nav id="article-nav">
     
-        <a href="/2019/09/02/react-native-vs-flutter/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            React Native vs Flutter
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2019/08/28/use-custom-domain-for-your-github-pages/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/09/06/i-got-the-certification-of-the-complete-flutter-development-bootcamp-with-dart/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Use custom domain for your github pages</p>
+        <p class="article-nav-title">I&#39;ve got the certification of the complete flutter development bootcamp with dart</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -652,7 +667,7 @@ Import the Shared Pref"
     var disqus_shortname = 'hyuks-github-blog';
     
     
-    var disqus_url = 'http://hyuk.github.io/2019/08/28/how-to-use-flutter-shared-preferences-plugin/';
+    var disqus_url = 'http://hyuk.github.io/2019/09/20/flutter-provider/';
     
     (function() {
     var dsq = document.createElement('script');
